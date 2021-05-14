@@ -27,27 +27,8 @@ export default class Exchange extends Component{
        description :''
      })
 
-     this.setState({
-       itemName : '',
-       description :''
-     })
-
-     // NOTE: Comment below return statement when you test the app in ios
-     // ToastAndroid.showWithGravityAndOffset('Item ready to exchange',
-     //    ToastAndroid.SHORT,
-     //  );
-     // return this.props.navigation.navigate('HomeScreen')
-
-     // NOTE:  Comment the below return statement when you test the app in android
      return Alert.alert(
-          'Item ready to exchange',
-          '',
-          [
-            {text: 'OK', onPress: () => {
-
-              this.props.navigation.navigate('HomeScreen')
-            }}
-          ]
+          'Item ready to exchange'
       );
   }
 
@@ -100,9 +81,6 @@ const styles = StyleSheet.create({
     width:"75%",
     height:35,
     alignSelf:'center',
-    borderColor:'#ffab91',
-    borderRadius:10,
-    borderWidth:1,
     marginTop:20,
     padding:10
   },
